@@ -1,2 +1,16 @@
-@import './common';
-@import './example';
+@import './base/reset';
+@import './utils/vars';
+@import './utils/pattern';
+@import './base/common';
+@import './components/header';
+@import './components/header-modal';
+@import './components/hero';
+@import './components/about';
+@import './components/store';
+@import './components/delivery';
+@import './components/blog';
+@import './components/blog-modal';
+@import './components/footer';
+
+
+
