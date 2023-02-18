@@ -3,6 +3,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: solid red 1px;
 }
 @media screen and (min-width: 480px) {
   .container {
