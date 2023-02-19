@@ -1,0 +1,7 @@
+.test-button {
+    @extend %button;
+}
+
+.title {
+    @extend %title
+}
