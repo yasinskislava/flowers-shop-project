@@ -1,0 +1,101 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.test-button {
+  font-family: "Montserrat";
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  height: 40px;
+  background: #E86F54;
+  border-radius: 38px;
+  color: #FFFFFF;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  display: block;
+  padding: 8px 39px;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms, background-color 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms, color 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms, box-shadow 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+}
+@media screen and (min-width: 768px) {
+  .test-button {
+    width: 280px;
+    height: 64px;
+    font-size: 28px;
+    line-height: 0.86;
+    padding: 16px 32px;
+  }
+}
+.test-button:hover {
+  background-color: transparent;
+  color: #E86F54;
+  box-shadow: 0px 0px 10px #E86F54;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: solid red 1px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.23;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 240px;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.23;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+  }
+  .title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    right: 0;
+  }
+}/*# sourceMappingURL=index.css.map */

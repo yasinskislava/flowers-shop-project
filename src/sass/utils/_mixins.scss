@@ -1,0 +1,23 @@
+@mixin title($left) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.23;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        border: 1px solid black;
+        position: absolute;
+        top: 50%;
+        left: $left;
+        right: 0;
+    }
+
+}
