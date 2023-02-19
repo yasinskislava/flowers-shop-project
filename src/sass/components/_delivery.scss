@@ -3,5 +3,11 @@
 }
 
 .title {
-    @extend %title
+    @include title(240px);
+
+
+    @media screen and (min-width: 768px) {
+        @include title(250px);
+    }
+    
 }

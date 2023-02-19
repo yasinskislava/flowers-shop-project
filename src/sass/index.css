@@ -1,20 +1,4 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.21;
-  color: #000000;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .title {
-    font-size: 44px;
-    line-height: 1.23;
-  }
-}
-
 .test-button {
   font-family: "Montserrat";
   margin-left: auto;
@@ -68,5 +52,50 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.23;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 240px;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.23;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+  }
+  .title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    right: 0;
   }
 }/*# sourceMappingURL=index.css.map */
