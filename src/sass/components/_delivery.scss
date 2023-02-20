@@ -1,13 +1,67 @@
-.test-button {
-    @extend %button;
-}
+.delivery-section {
+    position: relative;
 
-.title {
-    @include title(240px);
-
-
-    @media screen and (min-width: 768px) {
-        @include title(250px);
+    &__title {
+        @extend %title;
     }
     
+    &__slash {
+        border-top: solid black 1px;
+        width: 900px;
+        position: absolute;
+        top: 27px;
+        left: 250px;
+    }
+    
+    &__list {
+        list-style: none;
+        margin-bottom: 69px;
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &:not(:last-child) {
+            margin-bottom: 52px;
+        }
+    }
+    
+    &__text-span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.21;
+        width: 800px;
+        height: 78px;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__number-span {
+        border: solid black 1px;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 56px;
+        list-style: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+        width: 64px;
+        height: 64px;
+        display: inline-block;
+        padding-top: 15px;
+    }
+
+    &__img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
+
