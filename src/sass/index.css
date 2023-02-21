@@ -1,19 +1,4 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.delivery-section__title {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.21;
-  color: #000000;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .delivery-section__title {
-    font-size: 44px;
-    line-height: 1.23;
-  }
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -40,16 +25,29 @@
 .delivery-section {
   position: relative;
 }
-.delivery-section__slash {
-  border-top: solid black 1px;
-  width: 900px;
+.delivery-section__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.23;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+.delivery-section__title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border: 1px solid black;
   position: absolute;
-  top: 27px;
-  left: 250px;
+  top: 50%;
+  left: 240px;
+  right: 0;
 }
 .delivery-section__list {
   list-style: none;
-  margin-bottom: 69px;
 }
 .delivery-section__item {
   display: flex;
@@ -57,7 +55,7 @@
   justify-content: center;
 }
 .delivery-section__item:not(:last-child) {
-  margin-bottom: 52px;
+  margin-bottom: 32px;
 }
 .delivery-section__text-span {
   font-family: "Montserrat";
@@ -66,8 +64,7 @@
   font-size: 32px;
   line-height: 1.21;
   width: 800px;
-  height: 78px;
-  display: inline-block;
+  height: 84px;
   display: flex;
   align-items: center;
 }
@@ -81,14 +78,21 @@
   font-style: normal;
   font-weight: 500;
   font-size: 26px;
-  line-height: 32px;
+  line-height: 1.21;
   width: 64px;
   height: 64px;
-  display: inline-block;
-  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delivery-section__number-span:hover, .delivery-section__number-span:focus {
+  background-color: transparent;
+  color: #E86F54;
+  box-shadow: 0px 0px 10px #E86F54;
 }
 .delivery-section__img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-top: 60px;
 }/*# sourceMappingURL=index.css.map */
