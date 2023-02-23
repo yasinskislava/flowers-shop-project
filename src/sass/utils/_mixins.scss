@@ -1,8 +1,8 @@
 @mixin title($left) {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 44px;
-    line-height: 1.23;
+    font-size: 24px;
+    line-height: 1.21;
     color: #000000;
     text-transform: uppercase;
     position: relative;
@@ -17,6 +17,11 @@
         top: 50%;
         left: $left;
         right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 44px;
+        line-height: 1.23;
     }
 
 }
