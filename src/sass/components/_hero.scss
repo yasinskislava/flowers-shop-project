@@ -1,5 +1,5 @@
 .hero {
-    height: 354px;
+    height: 338px;
     @media screen and (min-width:768px) {
         height: 768px;
     }
@@ -10,16 +10,19 @@
 
 .hero_svg {
     position: absolute;
-    right: 0px;
+    right: 11px;
     top: 99px;
     width: 76px;
     height: 76px;
     @media screen and (min-width:768px) {
+        top: 243px;
+        right: 19px;
         width: 150px;
         height: 150px;
     }
 
     @media screen and (min-width:1280px) {
+        right: 169px;
         width: 166px;
         height: 166px;
     }
@@ -38,6 +41,8 @@
 
 .hero_text {
     position: absolute;
+    top: 110px;
+    left: 27px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
@@ -45,10 +50,13 @@
     width: 46px;
     
     @media screen and (min-width: 768px) {
+        top: 269px;
+        left: 73px;
         font-size: 24px;
         width: 76px;
     }
     @media screen and (min-width: 1280px){
+        left: 234px;
         font-size: 32px;
         width: 101px;
     }
@@ -56,14 +64,38 @@
 
 .hero_position-container {
     position: relative;
-    width: 289px;
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.hero_title {
+    position: absolute;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.21;
+    color: $standart-color;
+    text-align: center;
+    bottom: 30px;
+    left: 35px;
     @media screen and (min-width: 768px) {
-        width: 676px;
+        font-size: 120px;
+        bottom: 50px;
+        left: 96px;
     }
     @media screen and (min-width: 1280px) {
-        width: 877px;
+        font-size: 160px;
+        line-height: 1.15;
+        left: 256px;
+        height: 195px;
+        
+        &::before {
+            content: '';
+            display: block;
+            border-top: solid 7px $standart-color;
+            width: 48px;
+            position: absolute;
+            right: 14px;
+            top: 28px;
+        }
     }
+    
 }
