@@ -21,7 +21,6 @@
     }
 
     &__sub-title {
-        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
         text-align: center;
@@ -77,5 +76,5 @@
 }
 
 .slick-next:before, .slick-prev:before{
-    color: #E86F54;
+    color: $button-color;
 }

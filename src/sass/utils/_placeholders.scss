@@ -1,20 +1,20 @@
 %text {
-    font-family: 'Montserrat';
+    
     font-weight: 500;
     font-size: 32px;
     line-height: 1.2;
-    color: #000000;
+    color: $standart-color;
 }
 
 %button {
-    font-family: 'Montserrat';
+    
     margin-left: auto;
     margin-right: auto;
     width: 170px;
     height: 40px;
     background: $button-color;
     border-radius: 38px;
-    color: #FFFFFF;
+    color: $main-color;
     border: none;
     font-weight: 500;
     font-size: 18px;
