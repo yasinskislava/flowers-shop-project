@@ -62,108 +62,34 @@
     &__slider {
         display: flex;
     }
-
-    &__modal-form {
-        position: absolute;
-        width: 860px;
-        height: 528px;
-        display: flex;
-    }
-
-    &__modal-title {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 1.21;
-        text-align: center;
-        color: #000000;
-    }
-
-    &__modal-info {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 130%;
-        text-align: center;
-        color: #5C5C5C;
-        margin-top: 24px;
-        margin-bottom: 32px;
-    }
-
-    &__modal-button {
-        width: 336px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #E86F54;
-        border-radius: 8px;
-        color: #ffffff;
-        border: none;
-    }
-
-    &__modal-wrap {
-        width: 432px;
-        height: 528px;
-        padding: 111px 40px;
-        position: relative;
-    }
-    
-    &__img {
-        width: 428px;
-        height: 528px;
-    }
-
-    &__close-button {
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        border: none;
-        background-color: #ffffff;
-        padding: 0px;
-        top: 24px;
-        right: 24px;
-    }
-
-    &__label {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.21;
-        color: #5C5C5C;
-    }
-
-    &__input {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.21;
-        color: rgba(0, 0, 0, 0.3);
-        width: 336px;
-        height: 49px;
-        border-radius: 4px;
-        padding-left: 12px;
-        margin-top: 8px;
-        margin-bottom: 28px;
-    }
 }
 
 .slick-track {
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
 
 }
 
-.slick-slide img {
-    margin: 0 auto;
-}
+// .slick-slide {
+//     // margin: 0 auto;
+//     // object-fit: cover;
+// }
 
 .slick-next:before, .slick-prev:before{
     color: $button-color;
 }
 
+.slick-slide:not(:last-child) {
+    margin-right: 8px;
+    // object-fit: contain;
+    // overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 30px;
+    }
+}
