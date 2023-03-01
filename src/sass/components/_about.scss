@@ -1,4 +1,4 @@
-.about_title {
+.about__title {
     @include title(121px);
     margin-bottom: 32px;
     @media screen and (min-width: 768px) {
@@ -10,7 +10,7 @@
     }
 }
 
-.about_text {
+.about__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -50,7 +50,7 @@
     }
 }
 
-.about_info {
+.about__info {
     display: flex;
     align-items: center;
     flex-direction: column;
