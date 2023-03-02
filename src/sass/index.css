@@ -1,12 +1,17 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
 footer {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
   background: #000000;
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  footer {
     width: 768px;
     height: 268px;
   }
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  footer {
     width: 1280px;
     height: 298px;
   }
@@ -14,72 +19,58 @@ footer {
 
 .footer-container1 {
   display: flex;
-flex-wrap: wrap;
-margin-top:32px;
-margin-left:16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  margin-left: 16px;
 }
 
 .footer-container2 {
   display: flex;
   flex-wrap: wrap;
-  margin-top:32px;
-  margin-left:16px;
+  margin-top: 32px;
+  margin-left: 16px;
 }
 
-.footer-navigation{
+.footer-navigation {
   width: 116px;
   height: 144px;
 }
 
-.footer-openingtimes{
+.footer-openingtimes {
   width: 128px;
   height: 74px;
   padding-left: 44px;
 }
 
-.footer-contacts{
+.footer-contacts {
   width: 128px;
   height: 149px;
 }
 
-// .footer-icons{
-
-// }
-
 .footer-title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   /* identical to box height */
-
   color: #ffffff;
 }
+
 .footer-text {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-
   color: #ffffff;
 }
+
 .footer-href {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-
   color: #FFFFFF;
-}
-
-// @media screen and (min-width:768px) {
-//     width: 768px;
-//     height: 268px;
-// }
-// @media screen and (min-width:1200px) {
-//     width: 1280px;
-//     height: 298px;
-// }
+}/*# sourceMappingURL=index.css.map */
