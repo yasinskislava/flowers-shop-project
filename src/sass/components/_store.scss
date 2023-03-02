@@ -1,0 +1,93 @@
+.store-logo {
+    padding-left: 24px;
+    height: 54px;
+    font-size: 44px;
+    line-height: 1.22;
+    color: $standart-color;
+
+}
+
+.store-list {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.store-title {
+    @include title(210px)
+}
+
+.card-logo {
+    @include title(350px)
+}
+
+
+
+.store-section {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 320px) {
+        width: 320px;
+        .card-img {
+            padding-bottom: 16px;
+            width: 136px;
+            height: 155px;
+
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        .card-img {
+            padding-bottom: 16px;
+            width: 344px;
+            height: 399px;
+
+        }
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        .card-img {
+            padding-bottom: 16px;
+            width: 550px;
+            height: 492px;
+
+        }
+    }
+
+    .store-list {
+        list-style: none;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .card-logo {
+        padding-bottom: 4px;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.22;
+        color: $standart-color;
+    }
+
+
+
+    .card-title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.21;
+        color: $standart-color;
+        opacity: 0.6;
+
+    }
+
+    .store-card {
+        padding-left: 32px;
+        padding-bottom: 62px;
+    }
+
+    .store-button {
+       @extend %button;
+    }
+}

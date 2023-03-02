@@ -1,7 +1,9 @@
 @import './base/reset';
 @import './utils/vars';
-@import './utils/pattern';
+@import './utils/placeholders';
+@import './utils/mixins';
 @import './base/common';
+@import './utils/keyframes';
 @import './components/header';
 @import './components/header-modal';
 @import './components/hero';

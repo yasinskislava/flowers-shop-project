@@ -1,0 +1,27 @@
+@mixin title($left) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.21;
+    color: $standart-color;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    animation: to-left 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 700ms both;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        border: 1px solid $standart-color;
+        position: absolute;
+        top: 50%;
+        left: $left;
+        right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 44px;
+        line-height: 1.23;
+    }
+
+}

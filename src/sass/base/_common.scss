@@ -1,1 +1,24 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    outline:  solid red 1px;
+    
+    @media screen and (min-width: 320px) {
+        width: 320px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    }
+}
+
