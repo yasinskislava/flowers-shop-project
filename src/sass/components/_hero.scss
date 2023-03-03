@@ -8,7 +8,7 @@
     }
 }
 
-.hero_svg {
+.hero__svg {
     position: absolute;
     right: 11px;
     top: 99px;
@@ -28,7 +28,7 @@
     }
 }
 
-.hero_image {
+.hero__image {
     margin-left: auto;
     margin-right: auto;
     width: 145px;
@@ -39,7 +39,7 @@
     }
 }
 
-.hero_text {
+.hero__text {
     position: absolute;
     top: 110px;
     left: 27px;
@@ -62,12 +62,12 @@
     }
 }
 
-.hero_position-container {
+.hero__position-container {
     position: relative;
     height: 100%;
 }
 
-.hero_title {
+.hero__title {
     position: absolute;
     font-weight: 400;
     font-size: 52px;
