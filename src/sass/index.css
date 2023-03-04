@@ -907,6 +907,17 @@ a {
 }
 
 .slick-track {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .slick-track {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.slick-track {
   display: flex;
   align-items: center;
 }
@@ -949,7 +960,7 @@ a {
 }
 
 .slick-center {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0px 0px 5px #E86F54;
 }
 @media screen and (min-width: 1280px) {
