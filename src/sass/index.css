@@ -902,7 +902,7 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .my_slider {
-    width: 1084px;
+    width: 1000px;
   }
 }
 
@@ -946,6 +946,24 @@ a {
   -o-object-fit: none;
      object-fit: none;
   margin: 0 auto;
+}
+
+.slick-center {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px #E86F54;
+}
+@media screen and (min-width: 1280px) {
+  .slick-center {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slick-current + .slick-slide {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #E86F54;
+  }
 }
 
 .blog-section__backdrop {

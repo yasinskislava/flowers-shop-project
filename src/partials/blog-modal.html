@@ -1,19 +1,19 @@
 <div class="blog-section__backdrop blog-section__is-hidden" data-blog-backdrop>
     <form class="blog-section__modal-form">
         <button class="blog-section__close-button" type="button" data-close-blog-modal><svg width="24" height="24"><use href="./images/symbol-defs.svg#cross"></use></svg></button>
-        <picture>
+        <picture class="blog-section__img">
             <source srcset="./images/blog-modal-mobile@1x.jpg 1x, ./images/blog-modal-mobile@2x.jpg 2x" media="(max-width: 767px)">
             <source srcset="./images/blog-modal-desktop@1x.jpg 1x, ./images/blog-modal-desktop@2x.jpg 2x" media="(min-width: 1200px)">
             <source srcset="./images/blog-modal-tablet@1x.jpg 1x, ./images/blog-modal-tablet@2x.jpg 2x" media="(min-width: 768px)">
-
             <img src="./images/blog-modal-desktop@1x.jpg" alt="flower"> 
         </picture>
-
+        
+        <div class="blog-section__modal-wrap">
             <h2 class="blog-section__modal-title">Follow to our newsletter</h2>
             <p class="blog-section__modal-info">Be the first  to get exclusive offers and the latest  news on our product directly in your box.</p>
             <label for="blog-button">
                 <p class="blog-section__label">Email</p>
-                <input class="blog-section__input" type="email" placeholder="Your email" id="blog-button"> 
+                <input class="blog-section__input" type="email" placeholder="Your email" id="blog-button">
             </label>
             <button class="blog-section__modal-button" type="submit">Subscribe</button>
         </div>
