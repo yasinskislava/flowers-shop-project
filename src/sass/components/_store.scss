@@ -1,10 +1,9 @@
 .store-logo {
     padding-left: 24px;
     height: 54px;
-
     font-size: 44px;
     line-height: 1.22;
-    color: #000000;
+    color: $standart-color;
 }
 
 .store-list {
@@ -13,78 +12,58 @@
     list-style: none;
     flex-wrap: wrap;
     display: flex;
-
 }
 
 .store-title {
-    @include title(200px);
+    @include title(114px);
 
-
+    @media screen and (min-width:768px) {
+        @include title(194px);
+    }
 }
-
-
-
-
-
-
 
 .store-section {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 
-    
 
+    .store-button {
+        @extend %button;
+        margin-top: 32px;
+    }
 
+    .card-img {
+        width: 130px;
+        height: 150px;
+    }
 
+    .store-button {
+        display: flex;
 
+    }
 
-    @media screen and (min-width: 320px) {
-        .card-img {
-            width: 130px;
-            height: 150px;
-        }
+    .store-list {
+        margin-top: 32px;
+        list-style: none;
+        flex-wrap: wrap;
+        display: flex;
 
-        .store-button {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 14px 28px;
-            gap: 10px;
-            width: 208px;
-            height: 44px;
-            background: #E86F54;
-            border-radius: 38px;
-        }
+    }
 
-        .store-list {
-            margin-top: 32px;
-            list-style: none;
-            flex-wrap: wrap;
-            display: flex;
+    .card-logo {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $standart-color;
+    }
 
-        }
-
-        .store-button {
-            margin-top: 32px;
-        }
-
-        .card-logo {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 20px;
-            color: #000000;
-        }
-
-        .card-title {
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 15px;
-            color: #000000;
-            opacity: 0.6;
-        }
-
+    .card-title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        color: $standart-color;
+        opacity: 0.6;
     }
 
 
@@ -93,21 +72,13 @@
         .card-logo {
             font-weight: 500;
             font-size: 24px;
-            line-height: 39px;
-            color: #000000;
+            line-height: 1.625;
+            color: $standart-color;
         }
 
         .store-button {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 16px 32px;
-            gap: 10px;
-            width: 280px;
-            height: 64px;
-            background: #E86F54;
-            border-radius: 38px;
+
         }
 
         .store-list {
@@ -115,7 +86,7 @@
             list-style: none;
             flex-wrap: wrap;
             display: flex;
-
+            gap: 32px;
         }
 
 
@@ -123,9 +94,6 @@
             margin-top: 60px;
         }
 
-        .store-card {
-            // padding-right: 15px;
-        }
 
         .card-img {
             width: 344px;
@@ -134,11 +102,10 @@
 
         .card-title {
 
-
             font-weight: 600;
             font-size: 24px;
-            line-height: 29px;
-            color: #000000;
+            line-height: 1.2;
+            color: $standart-color;
             opacity: 0.6;
         }
 
@@ -156,37 +123,13 @@
 
         }
 
-        .store-button {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 16px 32px;
-            gap: 10px;
-            width: 280px;
-            height: 64px;
-            background: #E86F54;
-            border-radius: 38px;
-        }
-
-        .store-title {
-            margin-bottom: 80px;
-            width: 154px;
-            height: 54px;
-            font-weight: 700;
-            font-size: 44px;
-            line-height: 54px;
-            color: #000000;
-        }
-
-
         .card-title {
             width: 124px;
             height: 34px;
             font-weight: 600;
             font-size: 28px;
-            line-height: 34px;
-            color: #000000;
+            line-height: 1.21;
+            color: $standart-color;
             opacity: 0.6;
         }
 
@@ -204,17 +147,8 @@
             font-weight: 500;
             font-size: 36px;
             line-height: 1.22;
-            color: #000000;
+            color: $standart-color;
         }
-    }
-
-
-
-    .store-button {
-        @extend %button;
-        margin-top: 60px;
-
-
     }
 
 
