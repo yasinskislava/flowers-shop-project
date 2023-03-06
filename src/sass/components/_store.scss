@@ -8,6 +8,7 @@
 }
 
 .store-list {
+    gap: 16px;
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
@@ -16,8 +17,11 @@
 }
 
 .store-title {
-    @include title(210px)
+    @include title(200px);
+
+
 }
+
 
 .card-logo {
     @include title(330px)
@@ -31,7 +35,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    .store-card{
+    .store-card {
         // margin-left: 5px;
     }
 
@@ -45,9 +49,32 @@
             height: 150px;
         }
 
+        .store-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 28px;
+            gap: 10px;
+            width: 208px;
+            height: 44px;
+            background: #E86F54;
+            border-radius: 38px;
+        }
+
+        .store-list {
+            margin-top: 32px;
+            list-style: none;
+            flex-wrap: wrap;
+            display: flex;
+
+        }
+
+        .store-button {
+            margin-top: 32px;
+        }
+
         .card-logo {
-            
-            font-style: normal;
             font-weight: 500;
             font-size: 16px;
             line-height: 20px;
@@ -55,7 +82,6 @@
         }
 
         .card-title {
-          
             font-weight: 600;
             font-size: 12px;
             line-height: 15px;
@@ -69,23 +95,40 @@
     @media screen and (min-width: 768px) {
 
         .card-logo {
-        
-          
-          
-            font-style: normal;
             font-weight: 500;
-            font-size: 32px;
+            font-size: 24px;
             line-height: 39px;
             color: #000000;
         }
 
+        .store-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 32px;
+            gap: 10px;
+            width: 280px;
+            height: 64px;
+            background: #E86F54;
+            border-radius: 38px;
+        }
+
         .store-list {
+            margin-top: 60px;
+            list-style: none;
             flex-wrap: wrap;
             display: flex;
+
+        }
+
+
+        .store-button {
+            margin-top: 60px;
         }
 
         .store-card {
-            padding-right: 15px;
+            // padding-right: 15px;
         }
 
         .card-img {
@@ -94,8 +137,8 @@
         }
 
         .card-title {
-            
-            
+
+
             font-weight: 600;
             font-size: 24px;
             line-height: 29px;
@@ -117,24 +160,51 @@
 
         }
 
+        .store-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 32px;
+            gap: 10px;
+            width: 280px;
+            height: 64px;
+            background: #E86F54;
+            border-radius: 38px;
+        }
+
+        .store-title {
+            margin-bottom: 80px;
+            width: 154px;
+            height: 54px;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 54px;
+            color: #000000;
+        }
+
 
         .card-title {
             width: 124px;
             height: 34px;
-          
             font-weight: 600;
-            font-size: 34px;
+            font-size: 28px;
             line-height: 34px;
             color: #000000;
             opacity: 0.6;
         }
 
+        .store-list {
+            margin-top: 80px;
+            list-style: none;
+            flex-wrap: wrap;
+            display: flex;
+
+        }
+
         .card-logo {
             padding-bottom: 4px;
             margin-bottom: 32px;
-
-           
-
             font-weight: 500;
             font-size: 36px;
             line-height: 1.22;
@@ -144,36 +214,9 @@
 
 
 
-
-
-    .store-list {
-        list-style: none;
-        flex-wrap: wrap;
-        display: flex;
-
-    }
-
-
-
-
-
-
-    .card-title {
-      
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 1.21;
-        color: #000000;
-        opacity: 0.6;
-    }
-
-    .store-card {
-
-        padding-bottom: 62px;
-    }
-
     .store-button {
         @extend %button;
+        margin-top: 60px;
 
 
     }
