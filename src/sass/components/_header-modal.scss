@@ -1,0 +1,132 @@
+.modal__cross{
+    margin-bottom: 4px;
+}
+
+.modal__title{
+    @extend %text;
+    margin-bottom: 32px;
+}
+
+.modal__section{
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 480px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $main-color;
+    @media screen and (max-width: 479px) {
+       width: 320px;
+    }
+
+}
+
+.overlay.header-section__is-hidden{
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal__text{
+    font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+
+color: #5C5C5C;
+margin-bottom: 32px;
+}
+
+.modal__input{
+    font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: $shadow-color;
+}
+
+.placeholder{
+    width: 95%;
+margin-bottom: 24px;
+margin-top: 8px;
+border: 1px solid #D7D7D7;
+border-radius: 4px;
+padding-left: 16px;
+padding-top: 16px;
+padding-bottom: 16px;
+}
+
+.modal__button{
+    @extend %button;
+    margin-bottom: 48px;
+    border-radius: 8px;
+    width: 95%;
+    justify-content: center;
+}
+
+.modal__close{
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-left: 400px;
+    @media screen and (max-width: 767px) {
+        margin-left: 200px;
+    }
+}
+
+.overlay{
+        background: rgba(0, 0, 0, 0.3) ;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+}
+
+.reply__section{
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 480px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $main-color;
+    opacity: 1;
+    @media screen and (max-width: 479px) {
+        width: 320px;
+    }
+}
+
+.next-section__is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.reply__title{
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 0.053;
+text-align: center;
+color: $standart-color;
+margin-top: 16px;
+}
+
+.reply__text{
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: $shadow-color;
+margin-top: 16px;
+margin-bottom: 34px;
+}
+
+.reply__button{
+    @extend %button;
+    border-radius: 8px;
+    width: 98%;
+}
+
