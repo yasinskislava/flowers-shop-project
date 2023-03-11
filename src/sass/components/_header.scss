@@ -1,9 +1,7 @@
 .header__logo{
-    margin-top: 16px;
      @media screen and (min-width: 768px) {
       width: 72px;
       height: 57px;
-      margin-top: 24px;
   } 
   }
   
@@ -11,7 +9,6 @@
       display: flex;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 40px;
   }
   
   .header__item{
@@ -40,23 +37,20 @@
   }
   
   .header__phone{
-      margin-top: 25px;
       width: 20px;
       height: 20px;
-      @media screen and (min-width: 768px) {
-          margin-top: 42px;
-      }
   }
   
   .header__box{
       display: flex;
+      align-items: center;
+      padding-top: 16px;
   }
   
   .header__button{
       display: block;
       border: none;
       background: transparent;
-      margin-top: 20px;
       @media screen and (min-width: 768px) {
           display: none;
       }
