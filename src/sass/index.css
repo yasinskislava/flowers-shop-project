@@ -813,10 +813,12 @@ a {
 
 .blog-section {
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .blog-section {
     margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
 .blog-section__title {
