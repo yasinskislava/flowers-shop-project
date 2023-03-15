@@ -32,11 +32,10 @@
           </use>
           </svg>
       </button>
-      
       <picture>
-        <source media="(max-width: 767px)" srcset="./images/header-mobile@1x.jpg 1x, ./images/header-mobile@2x.jpg 2x">
-        <source media="(min-width: 1280px)" srcset="./images/header-desktop@1x.jpg 1x, ./images/header-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="./images/header-tablet@1x.jpg 1x, ./images/header-tablet@2x.jpg 2x">
+        <source media="(max-width: 767px)" srcset="/src/images/header-mobile@1x.jpg, /src/images/header-mobile@2x.jpg">
+        <source media="(min-width: 1280px)" srcset="/src/images/header-desktop@1x.jpg, /src/images/header-desktop@2x.jpg">
+        <source media="(min-width: 768px)" srcset="/src/images/header-tablet@1x.jpg, /src/images/header-tablet@2x.jpg">
         <img src="/src/images/header-desktop@1x.jpg" alt="flowers">
       </picture>
     <h2 class="reply__title">
@@ -47,9 +46,11 @@
       contact details 
       and will reach you soon.
     </h3>
+    <a class="reply__link" href="/src/index.html">
     <button class="reply__button" data-close-next-modal type="button">
       Continue
     </button>
+  </a>
   </section>
   </div>
   <script>
