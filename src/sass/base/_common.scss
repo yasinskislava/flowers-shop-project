@@ -22,3 +22,48 @@
     }
 }
 
+.button-top {
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    border: 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $button-color;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    z-index: 110000000000;
+
+    @media screen and (min-width: 768px) {
+        bottom: 50px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.button-top__use {
+    width: 35px;
+    height: 45px;
+
+    @media screen and (min-width: 768px) {
+        width: 35px;
+        height: 45px;
+     }
+}
+
+.button-top__svg{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+
+    @media screen and (min-width: 768px) {
+       width: 35px;
+       height: 45px;
+    }
+}
