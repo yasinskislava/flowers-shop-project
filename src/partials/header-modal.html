@@ -1,0 +1,94 @@
+<div data-header-backdrop class="overlay header-section__is-hidden">
+    <section class="modal__section">
+          <button data-close-header-modal class="modal__close">
+          <svg class="modal__cross" width="24px" height="24px">
+              <use href="/src/images/symbol-defs.svg#cross">    
+              </use>
+              </svg>
+          </button>
+          
+      <h2 class="modal__title">
+          Contact us
+      </h2>
+      <h3 class="modal__text">
+          If you have any additional 
+          questions or you want to clarify 
+          something before you make an order 
+          please fill in your contact details. 
+          We will call you back. 
+      </h3>
+      <h3 class="modal__input">Name</h3>
+      <input class="placeholder" placeholder="Your name" type="text" required>
+      <h3 class="modal__input">Email</h3>
+      <input class="placeholder" placeholder="Your email" type="email" required>
+      <button data-open-next-modal type="button" class="modal__button">
+          Send
+      </button>
+  </section>
+  <section data-next-backdrop class="reply__section next-section__is-hidden">
+    <button data-close-next-modal class="modal__close">
+      <svg class="modal__cross" width="24px" height="24px">
+          <use href="/src/images/symbol-defs.svg#cross">    
+          </use>
+          </svg>
+      </button>
+      
+      <picture>
+        <source media="(max-width: 767px)" srcset="./images/header-mobile@1x.jpg 1x, ./images/header-mobile@2x.jpg 2x">
+        <source media="(min-width: 1280px)" srcset="./images/header-desktop@1x.jpg 1x, ./images/header-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./images/header-tablet@1x.jpg 1x, ./images/header-tablet@2x.jpg 2x">
+        <img src="/src/images/header-desktop@1x.jpg" alt="flowers">
+      </picture>
+    <h2 class="reply__title">
+      Thank you!
+    </h2>
+    <h3 class="reply__text">
+      We have received your 
+      contact details 
+      and will reach you soon.
+    </h3>
+    <button class="reply__button" data-close-next-modal type="button">
+      Continue
+    </button>
+  </section>
+  </div>
+  <script>
+    const refus = {
+      openModalBtn: document.querySelector("[data-open-header-modal]"),
+      closeModalBtn: document.querySelector("[data-close-header-modal]"),
+      backdrop: document.querySelector("[data-header-backdrop]"),
+    };
+  
+    refus.openModalBtn.addEventListener("click", toggleModal);
+    refus.closeModalBtn.addEventListener("click", toggleModal);
+  
+    refus.backdrop.addEventListener("click", logBackdropClick);
+  
+    function toggleModal() {
+      refus.backdrop.classList.toggle("header-section__is-hidden");
+    }
+  
+    function logBackdropClick() {
+      console.log("Це клік в бекдроп");
+    }
+  </script>
+  <script>
+    const refuse = {
+      openModalBtn: document.querySelector("[data-open-next-modal]"),
+      closeModalBtn: document.querySelector("[data-close-next-modal]"),
+      backdrop: document.querySelector("[data-next-backdrop]"),
+    };
+  
+    refuse.openModalBtn.addEventListener("click", toggleModal);
+    refuse.closeModalBtn.addEventListener("click", toggleModal);
+  
+    refuse.backdrop.addEventListener("click", logBackdropClick);
+  
+    function toggleModal() {
+      refuse.backdrop.classList.toggle("next-section__is-hidden");
+    }
+  
+    function logBackdropClick() {
+      console.log("Це клік в бекдроп");
+    }
+  </script>

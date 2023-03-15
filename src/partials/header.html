@@ -3,7 +3,7 @@
         <section class="header__box">
     <a href="/src/index.html">
     <svg class="header__logo" width="45px" height="35px">
-    <use href="/src/images/symbol-defs.svg#logo-desktop-tablet">    
+    <use href="/src/images/symbol-defs.svg#logo">    
     </use>
     </svg>
     </a>
@@ -14,13 +14,13 @@
         <li class="header__item"><a class="navigation" href="">Delivery</a></li>
         <li class="header__item"><a class="navigation" href="">Blog</a></li>
     </ul>
-    <a href="tel:+380573561111"> 
+    <button data-open-header-modal type="button" class="header__contact"> 
            <svg class="header__phone" width="22px" height="22px">
-        <use href="/src/images/symbol-defs.svg#tel-desktop">
+        <use href="/src/images/symbol-defs.svg#tel">
         </use>
     </svg>
-    </a>
-    <button type="button" class="header__button">
+    </button>
+    <button data-open-menu type="button" class="header__button">
     <svg class="header__menu" width="18px" height="16px">
         <use href="/src/images/symbol-defs.svg#burger">
         </use>
@@ -28,4 +28,50 @@
 </button>
 </section>
 </div>
+    <section data-menu-backdrop class="backdrop menu__is-hidden">
+           <button data-close-menu class="menu__close" type="button"> 
+            <svg class="menu__cross" width="24px" height="24px">
+                <use href="/src/images/symbol-defs.svg#cross">    
+                </use>
+                </svg>
+            </button>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__nav" href="">Anemone</a> 
+                    </li>
+                    <li class="menu__item"> 
+                        <a class="menu__nav" href="">About us</a>
+                    </li>
+                    <li class="menu__item"> 
+                        <a class="menu__nav" href="">Store</a>
+                    </li>
+                    <li class="menu__item"> 
+                        <a class="menu__nav" href="">Delivery</a>
+                    </li>
+                    <li class="menu__item"> 
+                        <a class="menu__nav" href="">Blog</a>
+                    </li>
+                </ul>
+        </section> 
 </header>
+
+<script>
+    const refse = {
+      openModalBtn: document.querySelector("[data-open-menu]"),
+      closeModalBtn: document.querySelector("[data-close-menu]"),
+      backdrop: document.querySelector("[data-menu-backdrop]"),
+    };
+
+    refse.openModalBtn.addEventListener("click", toggleModal);
+    refse.closeModalBtn.addEventListener("click", toggleModal);
+
+    refse.backdrop.addEventListener("click", logBackdropClick);
+
+    function toggleModal() {
+      refse.backdrop.classList.toggle("menu__is-hidden");
+    }
+
+    function logBackdropClick() {
+      console.log("Це клік в бекдроп");
+    }
+  </script>
