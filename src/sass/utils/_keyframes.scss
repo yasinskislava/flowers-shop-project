@@ -12,3 +12,25 @@
         transform: translateX(0);
     }
 }
+
+@keyframes hero {
+    from {
+        background-image: url(../images/hero-desktop@1x.jpg);
+    }
+    25% {
+        animation-play-state: paused;
+    }
+    50% {
+        animation-play-state: running;
+        background-image: url(../images/hero-2desktop@1x.jpg);
+    }
+    75% {
+        animation-play-state: paused;
+        
+    }
+    to {
+        animation-play-state: running;
+        background-position-y: 0px;
+        background-image: url(../images/hero-3desktop@1x.jpg);
+    }
+}

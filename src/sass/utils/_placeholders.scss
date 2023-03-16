@@ -20,19 +20,19 @@
     font-size: 18px;
     line-height: 1.33; 
     display: block;
-    padding: 8px 39px;
+    padding: 9px 0px;
     cursor: pointer;
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms,
     background-color 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms,
     color 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms, 
     box-shadow 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms  ;
-    
+    justify-content: center;
     @media screen and (min-width: 768px) {
         width: 280px;
         height: 64px;
         font-size: 28px;
         line-height: 0.86; 
-        padding: 16px 32px;
+        padding: 18px 0px;
     }
 
         &:hover,&:focus {
