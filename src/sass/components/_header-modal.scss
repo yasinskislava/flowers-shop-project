@@ -18,14 +18,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: $main-color;
-    z-index: 3;
+   
     @media screen and (max-width: 479px) {
        width: 320px;
     }
 
 }
 
-.header-section__is-hidden{
+.overlay.header-section__is-hidden{
     pointer-events: none;
     opacity: 0;
 }

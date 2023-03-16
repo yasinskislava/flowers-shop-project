@@ -1,10 +1,10 @@
 .hero {
     width: 100%;
-    height: 405px;
+    height: 350px;
     background-image: url(../images/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position-x: 50%;
-    background-position-y: 95px;
+    background-position-y: 40px;
     @media screen and (min-width:768px) {
         height: 849px;
         background-image: url(../images/hero-tablet@1x.jpg);
@@ -14,13 +14,14 @@
         background-position-y: 149px;
         height: 878px;
         animation: hero 4s cubic-bezier(0, 0, 1, 1) 2s both;
+        margin-top: 10px;
     }
 }
 
 .hero__svg {
     position: absolute;
     right: 11px;
-    top: 205px;
+    top: 150px;
     width: 76px;
     height: 76px;
 
@@ -42,7 +43,7 @@
 
 .hero__text {
     position: absolute;
-    top: 225px;
+    top: 170px;
     left: 27px;
     font-weight: 400;
     font-size: 14px;
@@ -76,7 +77,7 @@
     line-height: 1.21;
     color: $standart-color;
     text-align: center;
-    top: 342px;
+    top: 287px;
     left: 35px;
 
     @media screen and (min-width: 768px) {
