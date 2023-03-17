@@ -60,7 +60,6 @@ padding-bottom: 16px;
     border-radius: 8px;
     width: 100%;
     margin-left: 0;
-    margin-right: 0;
 }
 
 .modal__close{
@@ -126,6 +125,7 @@ margin-bottom: 34px;
     @extend %button;
     border-radius: 8px;
     width: 100%;
+    margin-left: 0;
 }
 
 .reply__link{
