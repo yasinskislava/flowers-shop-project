@@ -59,10 +59,11 @@
   .backdrop{
       background-color: $button-color;
       width: 100%;
-      position: absolute;
+      height: 100%;
+      position: fixed;
       top: 0;
       opacity: 1;
-      z-index: 1;
+      z-index: 1000;
       @media screen and (min-width: 768px) {
           display: none;
       }
