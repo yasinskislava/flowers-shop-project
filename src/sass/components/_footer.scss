@@ -3,15 +3,16 @@ footer {
   display: flex;
   background: #000000;
   margin-top: 60px;
+  height: 400px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    height: 268px;
+  @media screen and (min-width:768px) {
+      height: 300px;
+      width: 768px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1280px;
-    height: 298px;
+  @media screen and (min-width: 1280px) {
+      width: 1280px;
   }
 }
 
@@ -65,6 +66,7 @@ margin-left:16px;
 .footer-contacts{
   width: 128px;
   @media screen and (min-width: 768px) {
+    width: 236px;
     margin-left: 44px;
     margin-top: 60px;
   }
@@ -76,12 +78,37 @@ margin-left:16px;
 
 .footer-icons{
 display: flex;
+margin-left: 40px;
+@media screen and (min-width: 768px) {
 flex-direction: column;
+margin-top: 62px;
+margin-left: 72px;
+}
+@media screen and (min-width: 1200px) {
+
+margin-top: 74px;
+margin-left: 216px;
+}
 }
 
 .footer-icon{
 width: 28px;
-fill: #FFFFFF;
+height: 28px;
+fill: #000000;
+stroke: #FFFFFF;
+margin-left: 21px;
+@media screen and (min-width: 768px) {
+margin-left: 0;
+margin-bottom: 22px;
+}
+}
+
+.footer-icon:first-child{
+  margin-left: 0;
+}
+
+.footer-icon:last-child{
+  margin-bottom: 0;
 }
 
 .footer-lable{
@@ -137,6 +164,10 @@ display: none;
   word-wrap: break-word;
   display: block;
   color: #FFFFFF;
+  @media screen and (min-width: 768px) {
+  word-wrap: normal;
+  }
+
 }
 
 // @media screen and (min-width:768px) {

@@ -15,6 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: $main-color;
+   
     @media screen and (max-width: 479px) {
        width: 320px;
     }
@@ -24,6 +25,7 @@
 .overlay.header-section__is-hidden{
     pointer-events: none;
     opacity: 0;
+    transform: scale(0) rotate(180deg);
 }
 
 .modal__text{
@@ -77,6 +79,8 @@ padding-bottom: 16px;
         height: 100%;
         top: 0;
         left: 0;
+        transition-duration: 500ms;
+        transition-delay: 250ms;
 }
 
 .reply__section{
@@ -97,6 +101,7 @@ padding-bottom: 16px;
 .next-section__is-hidden{
     opacity: 0;
     pointer-events: none;
+    
 }
 
 .reply__title{

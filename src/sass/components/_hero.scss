@@ -1,25 +1,32 @@
 .hero {
-    height: 338px;
-    margin-top: 20px;
-
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/hero-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 40px;
     @media screen and (min-width:768px) {
-        height: 768px;
-        margin-top: 50px;
+        height: 849px;
+        background-image: url(../images/hero-tablet@1x.jpg);
+        background-position-y: 119px;
     }
-
     @media screen and (min-width:1280px) {
-        height: 793px;
+        background-position-y: 149px;
+        height: 878px;
+        animation: hero 4s cubic-bezier(0, 0, 1, 1) 2s both;
+        margin-top: 10px;
     }
 }
 
 .hero__svg {
     position: absolute;
     right: 11px;
-    top: 99px;
+    top: 150px;
     width: 76px;
     height: 76px;
+
     @media screen and (min-width:768px) {
-        top: 243px;
+        top: 381px;
         right: 19px;
         width: 150px;
         height: 150px;
@@ -32,34 +39,26 @@
     }
 }
 
-.hero__image {
-    margin-left: auto;
-    margin-right: auto;
-    width: 145px;
-    height: 274px;
-    @media screen and (min-width:768px) {
-        width: 390px;
-        height: 636px;
-    }
-}
+
 
 .hero__text {
     position: absolute;
-    top: 110px;
+    top: 170px;
     left: 27px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
     color: $standart-color;
     width: 46px;
-    
+
     @media screen and (min-width: 768px) {
-        top: 269px;
+        top: 419px;
         left: 73px;
         font-size: 24px;
         width: 76px;
     }
-    @media screen and (min-width: 1280px){
+
+    @media screen and (min-width: 1280px) {
         left: 234px;
         font-size: 32px;
         width: 101px;
@@ -78,19 +77,21 @@
     line-height: 1.21;
     color: $standart-color;
     text-align: center;
-    bottom: 30px;
+    top: 287px;
     left: 35px;
+
     @media screen and (min-width: 768px) {
         font-size: 120px;
-        bottom: 50px;
+        top: 703px;
         left: 96px;
     }
+
     @media screen and (min-width: 1280px) {
         font-size: 160px;
         line-height: 1.15;
         left: 256px;
         height: 195px;
-        
+
         &::before {
             content: '';
             display: block;
@@ -101,5 +102,5 @@
             top: 28px;
         }
     }
-    
+
 }

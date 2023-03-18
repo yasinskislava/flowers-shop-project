@@ -58,11 +58,13 @@
   
   .backdrop{
       background-color: $button-color;
-      width: 100%;
-      position: absolute;
-      top: 0px;
+      width: 320px;
+      left: calc((100% - 320px) / 2);
+      height: 100%;
+      position: fixed;
+      top: 0;
       opacity: 1;
-      z-index: 1;
+      z-index: 1000;
       @media screen and (min-width: 768px) {
           display: none;
       }
@@ -73,12 +75,15 @@
     border: none;
     margin-left: auto;
     display: block;
-    margin-top: 20px;
+    margin-top: 22px;
+    margin-right: 22px;
     
   }
   
   .menu__cross{
       fill: $main-color;
+      width: 24px;
+      height: 24px;
   }
   
   .menu__list{
