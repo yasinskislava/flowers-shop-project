@@ -37,20 +37,20 @@
             </button>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__nav" href="">Anemone</a> 
+                   <button class="list__button"><a class="menu__nav" href="#1">Anemone</a></button>
                     </li>
                     <li class="menu__item"> 
-                        <a class="menu__nav" href="">About us</a>
+                    <button class="list__button"><a class="menu__nav" href="#2">About us</a></button>
                     </li>
                     <li class="menu__item"> 
-                        <a class="menu__nav" href="">Store</a>
+                     <button class="list__button"><a class="menu__nav" href="#3">Store</a></button>
                     </li>
                     <li class="menu__item"> 
-                        <a class="menu__nav" href="">Delivery</a>
+                     <button class="list__button"><a class="menu__nav" href="#4">Delivery</a></button>
                     </li>
                     <li class="menu__item"> 
-                        <a class="menu__nav" href="">Blog</a>
-                    </li>
+                     <button class="list__button"><a class="menu__nav" href="#5">Blog</a></button>
+                    </li> 
                 </ul>
         </section> 
 </header>
@@ -58,8 +58,8 @@
 <script>
     const refse = {
       openModalBtn: document.querySelector("[data-open-menu]"),
-      closeModalBtn: document.querySelector("[data-close-menu]"),
       backdrop: document.querySelector("[data-menu-backdrop]"),
+      closeModalBtn: document.querySelector("[data-close-menu]"), 
     };
 
     refse.openModalBtn.addEventListener("click", toggleModal);
